@@ -1,3 +1,4 @@
+// after installing these npms, lines 2-3 define which npms we will be using on this file
 const chalk = require('chalk')
 const yargs = require('yargs')
 const notes = require('./notes.js')
@@ -10,6 +11,7 @@ yargs.version('1.1.0')
 yargs.command({
     command: 'add',
     describe: 'Add a new note',
+    // these are the conditions required to be able to run the add command
     builder: {
         title: {
             describe: 'Note title',
@@ -31,6 +33,7 @@ yargs.command({
 yargs.command({
     command: 'remove',
     describe: 'Remove a note',
+    // these are the conditions required to be able to run the remove command
     builder: {
         title: {
             describe: 'Note title',
@@ -56,6 +59,7 @@ yargs.command({
 yargs.command({
     command: 'read',
     describe: 'read a note',
+    // these are the conditions required to be able to run the read command
     builder: {
         title: {
             describe: 'Note title',

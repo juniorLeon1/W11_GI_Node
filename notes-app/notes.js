@@ -75,7 +75,8 @@ const loadNotes = () => {
     }
 }
 
-// exporting each function - basically other files can pull the functions from this page, or what is exported from this page
+// exporting each function - basically other files can pull the functions from this page by name because 
+// they have been exported with module.exports
 module.exports = {
     addNote: addNote,
     removeNote: removeNote,
